@@ -8,6 +8,8 @@ pipeline {
     // agent any
 
     environment {
+        SERVER_BASE_URL = credentials('SERVER_BASE_URL')
+
         ENVIRONMENT = 'UAT'
         // change
 //         BUCKET_NAME = 's3://uat-learn.jiangren.com.au'
