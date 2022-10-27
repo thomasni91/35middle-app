@@ -8,8 +8,8 @@ pipeline {
     // agent any
 
     environment {
-        // NEXT_PUBLIC_SERVER_BASE_URL = credentials('SERVER_BASE_URL')
-        // NEXT_PUBLIC_SERVER_BASE_URL = 'https://xxx.thomasp3.link'
+        // SERVER_BASE_URL = credentials('SERVER_BASE_URL')
+        // SERVER_BASE_URL = 'https://xxx.thomasp3.link'
 
 
         ENVIRONMENT = 'UAT'
