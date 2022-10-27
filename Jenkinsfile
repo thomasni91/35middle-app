@@ -8,7 +8,9 @@ pipeline {
     // agent any
 
     environment {
-        SERVER_BASE_URL = credentials('SERVER_BASE_URL')
+        // SERVER_BASE_URL = credentials('SERVER_BASE_URL')
+        SERVER_BASE_URL = 'https://xxx.thomasp3.link'
+
 
         ENVIRONMENT = 'UAT'
         // change
