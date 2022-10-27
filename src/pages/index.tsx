@@ -1,10 +1,5 @@
 const Index = () => {
-  return (
-    <div>
-      Test$
-      <span>${process.env.SERVER_BASE_URL}</span>
-    </div>
-  );
+  return <div>Test$</div>;
 };
 
 export default Index;
