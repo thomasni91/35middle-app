@@ -12,11 +12,14 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const response = await fetch(`${process.env.SERVER_BASE_URL}/api/v1/login`, {
-    method: req.method,
-    headers: { 'Content-Type': 'application/json' },
-    body: req.body,
-  });
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/api/v1/login`,
+    {
+      method: req.method,
+      headers: { 'Content-Type': 'application/json' },
+      body: req.body,
+    }
+  );
 
   const data: UserEntity = await response.json();
   res.setHeader('Set-Cookie', response.headers.get('Set-Cookie') || '');
