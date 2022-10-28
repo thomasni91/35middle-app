@@ -5,8 +5,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const response = await fetch(
-    // `${process.env.SERVER_BASE_URL}/api/v1/reset-password`,
-    `https://xxx.thomasp3.link/api/v1/reset-password`,
+    `${process.env.SERVER_BASE_URL}/api/v1/reset-password`,
+    // `https://xxx.thomasp3.link/api/v1/reset-password`,
     {
       method: req.method,
       body: req.body,
